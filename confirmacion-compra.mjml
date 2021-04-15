@@ -1,0 +1,23 @@
+<mjml>
+  <mj-body background-color="#FFF">
+    <mj-section>
+      <mj-column>
+
+        <mj-text align="center" font-size="20px" color="#333" font-family="helvetica">Recibimos tu pago ✨</mj-text>
+
+        <mj-divider border-color="#333" border-width="1px"></mj-divider>
+
+        <mj-text align="center" font-size="34px" color="#ff00ff" font-family="helvetica" font-weight="bold">ISABELLA</mj-text>
+
+        <mj-text align="center" font-size="12px" color="#333" font-family="helvetica" font-weight="bold">Ni bien enviemos tu pedido te avisamos por mail!</mj-text>
+
+        <mj-text align="center" font-size="15px" color="#ff00ff" font-family="helvetica" font-weight="bold" padding-bottom="1px">ISABELLA</mj-text>
+
+        <mj-text align="center" font-size="15px" color="#ff00ff" font-family="helvetica" font-weight="bold" padding-top="1px" padding-top="1px">ROMPE TUS LIMITES</mj-text>
+
+        <mj-button background-color="#e6a9cd" font-weight="bold" border-radius="10px" href="https://{{ store_url }}/">CHUSMEAR LA WEB</mj-button>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
