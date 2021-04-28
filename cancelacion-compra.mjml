@@ -1,0 +1,27 @@
+<mjml>
+  <mj-body background-color="#f8cee7">
+    <mj-section>
+      <mj-column>
+
+        <mj-text align="center" font-size="42px" color="#ff00ff" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
+          ISABELLA
+        </mj-text>
+
+        <mj-text align="center" font-size="18px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
+          Hola {{ contact_name }}, tu pedido #{{ order.id }} fue cancelado.
+        </mj-text>
+
+        <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif">
+          Esperamos próximamente tu compra!✨
+        </mj-text>
+
+        <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif">
+          Ante cualquier inquietud, no dudes en responder este mensaje.
+        </mj-text>
+
+        <mj-button background-color="#e6a9cd" font-weight="bold" border-radius="10px" href="https://www.isabella.com.ar/">CHUSMEAR LA WEB</mj-button>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
