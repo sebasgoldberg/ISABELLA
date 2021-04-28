@@ -1,0 +1,51 @@
+<mjml>
+  <mj-body background-color="#f8cee7">
+    <mj-section>
+      <mj-column>
+
+        <mj-text align="center" font-size="42px" color="#ff00ff" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
+          ISABELLA
+        </mj-text>
+
+        <mj-text align="center" font-size="18px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif">
+          Hola {{ cart.contact_name }},  guardamos tu carrito en Isabella y te esta esperando!
+        </mj-text>
+
+        <mj-text align="center" font-size="18px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bolder">
+          Te vamos a dar una sorpresa!
+        </mj-text>
+
+        <mj-text align="center" font-size="18px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bolder">
+          Con el cupón  SORPRESA10  obtenes un 10% off extra!!✨
+        </mj-text>
+
+        <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
+          Estos son los productos que habías agregado: 
+        </mj-text>
+
+        <mj-table>
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0;">
+            <th style="padding: 0 15px 0 0;">Producto</th>
+            <th style="padding: 0 15px;">Cantidad</th>
+            <th style="padding: 0 0 0 15px;">Precio Unitario</th>
+          </tr>
+          {% for product in cart.contents %}
+            <tr>
+                <td style="padding: 0 15px 0 0;">{{product.name ~ product.variationName}}</td>
+                <td style="padding: 0 15px;">{{product.quantity}}</td>
+                <td style="padding: 0 0 0 15px;">{{ product.priceFormat }}</td>
+            </tr>
+          {% endfor %}
+        </mj-table>
+
+        <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
+          Podes completar tu compra! Hace click en el siguiente <a href="{{ cart.abandoned_checkout_url }}">Link</a>.
+        </mj-text>
+
+
+        <mj-button background-color="#e6a9cd" font-weight="bold" border-radius="10px" href="https://www.isabella.com.ar/">CHUSMEAR LA WEB</mj-button>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
