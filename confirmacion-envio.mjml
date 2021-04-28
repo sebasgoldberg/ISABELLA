@@ -12,14 +12,15 @@
         </mj-text>
 
         <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
-          Podes seguir el envío entrando al siguiente <a href="https://{{ order.tracking_url | raw }}/" target="_blank">Link</a>.
+          Podes seguir el envío y ver el estado de tu pedido entrando al siguiente <a href="{{ order.statusPageUrl }}" target="_blank">Link</a>.
         </mj-text>
+
 
         <mj-text align="center" font-size="14px" color="#000" font-family="Lato,Tahoma,Verdana,Segoe,sans-serif" font-weight="bold">
           Que lo disfrutes!✨
         </mj-text>
 
-        <mj-button background-color="#e6a9cd" font-weight="bold" border-radius="10px" href="https://{{ store_url }}/">CHUSMEAR LA WEB</mj-button>
+        <mj-button background-color="#e6a9cd" font-weight="bold" border-radius="10px" href="https://www.isabella.com.ar/">CHUSMEAR LA WEB</mj-button>
 
       </mj-column>
     </mj-section>
